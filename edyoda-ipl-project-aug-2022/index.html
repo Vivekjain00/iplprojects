@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f5013579e.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </head>
+<body>
+    <header>
+        <div id="head-container">
+            <div id="head-right">
+                <img src="https://assets.thehansindia.com/h-upload/2022/01/14/1194971-ipl.webp" alt="logo here" id="logo">
+               <a href="./index.html"> <button id="home-buttonn" class="add-btn">Home</button></a>
+            </div>
+           <div id="head-left">
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Entercode..   eg -CSK">
+                <div class="autocom-box">
+               
+                </div>
+                <div class="icon"><i class="fas fa-search"></i></div>
+              </div>
+                <button id="add-team-button" class="add-btn" onclick="addteamclicked()">
+                    Add Team
+                </button>
+                <button id="add-player-button" class="add-btn" onclick="addPlayerClicked()">
+                    Add Player
+                </button>
+           </div>
+        </div>
+    </header>
+       <!-- image slider start sk -->
+
+  
+  <div class="slider">
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      
+      <div class="corausal">
+        <img src="/edyoda-ipl-project-aug-2022/image1.jpg" alt="trophy" width="100%" height="100%">
+      </div>
+      <div class="corausal first">
+        <img src="/edyoda-ipl-project-aug-2022/image2.png" alt="teams" width="100%" >
+      </div>
+      <div class="corausal">
+        <img src="https://i.cdn.newsbytesapp.com/images/l35220220504123327.jpeg" alt="attentions" width="100%" height="100%">
+      </div>
+      <div class="corausal">
+        <img src="https://th-i.thgim.com/public/incoming/kfiuos/article65405365.ece/alternates/LANDSCAPE_1200/PTI05_11_2022_000236A.jpg" alt="action" width="100%" height="100%">
+      </div>
+    <!--button in corausal-->
+      <!-- <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div> -->
+    </div>
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </div>
+  <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"  style="height: 500px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.indianexpress.com/2022/03/Jio-IPL-2022-1.jpg" class="d-block w-100" alt="..." style="height:500px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zUhk3yaf2usqUn8iytxUNLnwvZf4xAtaY2Ytk6bdIvfW4vGq741rX4TSk1qX7A8umOA&usqp=CAU" class="d-block w-100" alt="..." style="height:500px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYkAS5q4CWyUhkuAqW_jvTUtbsgNPbTUFJveUSfhMn5Bs_DIwIqbersLZjdgssyB4lVdE&usqp=CAU" class="d-block w-100" alt="..." style="height:500px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+ <div style="margin-top: 50px;">
+   <h1 id="slogan"> Welcome, IPL Teams 2022</h1></div>
+     <div id="first-main">
+<!--IPL teams card using js-->
+       <div id="container_teams">
+      
+       </div>
+
+     </div>
+     <footer>
+      <div ><h4 style="font-size:50px;">IPL Home Page</h4>
+    
+      </div>
+      
+  </footer>
+    
+
+
+
+    <script src="./index.js"></script>
+  
+  
+</body>
+</html>

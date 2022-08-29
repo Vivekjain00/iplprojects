@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Team Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f5013579e.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="head-con2">
+            <div id="head-right">
+                <img src="https://assets.thehansindia.com/h-upload/2022/01/14/1194971-ipl.webp" alt="logo here" id="logo">
+               <a href="./index.html"> <button id="home-buttonn" class="add-button">Home</button></a>
+            </div>
+         
+        </div>
+    </header>
+    
+    <div id="add-team">
+        <h1 id="slogan3">Add a Team</h1>
+        <form id="addteamform">
+            <p>Team Name</p>
+            <input id="inp1" type="text" name="teamName" placeholder="Enter team name here.." required>
+            <p>Team logo Url</p>
+            <input id="inp3" type="text" name="logoUrl" placeholder="enter logo URL here.." required> 
+            <p>Won count</p>
+            <input id="inp4" type="number" name="wonCount" maxlength="1" placeholder="enter won count here.." required>
+
+            <button type="submit">Add team</button>
+        </form>
+
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.indianexpress.com/2022/03/Jio-IPL-2022-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zUhk3yaf2usqUn8iytxUNLnwvZf4xAtaY2Ytk6bdIvfW4vGq741rX4TSk1qX7A8umOA&usqp=CAU" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYkAS5q4CWyUhkuAqW_jvTUtbsgNPbTUFJveUSfhMn5Bs_DIwIqbersLZjdgssyB4lVdE&usqp=CAU" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <footer>
+        <div><h4>IPL Add team page</h4>
+      
+        </div>
+        
+    </footer>
+    <script src="./addteam.js">
+
+
+
+    </script>
+    
+</body>
+</html>
